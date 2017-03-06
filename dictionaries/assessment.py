@@ -30,6 +30,7 @@ def count_words(phrase):
     """
     word_counts = {}
     words = phrase.split()
+
     for word in words:
         word_counts[word] = word_counts.get(word, 0) + 1
 
@@ -91,6 +92,7 @@ def word_length_sorted(words):
     """
 
     word_lengths = {}
+    
     for word in words:
         length = len(word)
         if length in word_lengths:
@@ -147,7 +149,33 @@ def translate_to_pirate_talk(phrase):
         'me swabbie be not a man!'
     """
 
-    return ""
+    english_pirate_dict = {
+        "sir": "matey",
+        "hotel": "fleabag inn",
+        "student": "swabbie",
+        "man": "matey",
+        "professor": "foul blaggart",
+        "restuarant": "galley",
+        "your": "yer",
+        "excuse": "arr",
+        "students": "swabbies",
+        "are": "be",
+        "restroom": "head",
+        "my": "me",
+        "is": "be",
+        }
+
+    split_phrase = phrase.split()
+    sentence = []
+
+    for word in split_phrase:
+        value = english_pirate_dict.get(word)
+        if value:
+            sentence.append(value)
+        else:
+            sentence.append(word)
+
+    return " ".join(sentence)
 
 
 def kids_game(names):
@@ -196,7 +224,29 @@ def kids_game(names):
     good solutions here will definitely require a dictionary.
     """
 
-    return []
+    letter_dict = {}
+    
+    starting_word = names[0]
+    results = []
+    results.append(starting_word)
+
+    # Adds each word to the dictionary with (first letter,last letter) as value
+    for word in names:
+        first_letter = word[0]
+        last_letter  = word[-1]
+        letter_dict[word] = first_letter, last_letter
+
+
+    for word in results:
+        last_letter = letter_dict[word][1]
+        for name in names:
+            # if the last letter of word == first character of name
+            # and if its not in results 
+            if (last_letter == letter_dict[name][0] and name not in results):
+                results.append(name)
+                break
+    print results 
+
 
 #####################################################################
 # You can ignore everything below this.
