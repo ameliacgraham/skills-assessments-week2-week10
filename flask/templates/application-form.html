@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %} Application Form {% endblock %}
+{% block content %}
+  <h1>Application Form</h1>
+  <p id="instructions">Please fill out the form below. <br>
+  Please enter your salary requirement in numeric form, without commas. <br>
+  Ex: 100000 </p>
+  <form action="/application-success" method="POST">
+  First Name <input class="blue-input" type="text" name="first-name"><br>
+  Last Name <input class="blue-input" id="bold-lastname" type="text" name="last-name"><br>
+  Salary Requirement <input class="blue-input" type="text" name="salary-requirement"><br>
+  Position
+    <select name="position">
+      {% for job in job_titles %}
+      <option value="{{ job }}">{{ job }}</option>
+      {% endfor %}
+    </select><br>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+  <p>Thank you for applying!<br>
+     We look forward to talking with you!
+  </p>
+{% endblock %}

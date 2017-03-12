@@ -1,0 +1,15 @@
+.blue-input {
+    background-color: #00ccff;
+}
+
+#submit {
+    background-color: #ffff80;
+}
+
+#bold-lastname {
+    font-weight: bold;
+}
+
+#instructions {
+    border: 2px solid black;
+}

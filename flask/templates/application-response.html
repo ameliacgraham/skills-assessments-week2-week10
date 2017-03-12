@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %} Application Response {% endblock %}
+{% block content %}
+<p> Thank you, {{ first_name }} {{ last_name }}, for applying to be a {{ job_title }}.<br>
+Your mininum salary requirement is {{ "${:,.2f}".format(salary_requirement) }}. </p>
+{% endblock %}
+
