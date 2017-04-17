@@ -1,0 +1,72 @@
+Runtime
+1. How many animal crackers are in the box.
+2.
+    O(1)
+    O(log n)
+    O(n)
+    O(2^n)
+    O(n log n)
+    O(n^2)
+
+Stacks and Queues
+1.
+    1. Stack
+    2. Queue
+    3. Stack
+2.
+    1. Our help queue at Hackbright. It would not be fun if it were last in first out :)
+    2. Ordering food at a restaurant. The first people who ordered would get their food first
+3.
+    1. Hitting undo in sublime
+    2. When using a depth-first search of a tree
+
+Linked Lists
+1. Nodes:
+    "Apple"
+    "Berry"
+    "Cherry"
+
+    Data:
+    String "Apple"
+    String "Berry"
+    String "Cherry"
+
+    Head:
+    "Apple"
+
+    Tail:
+    "Cherry"
+2. Doubly-linked lists have next and a prev node. Linked lists only know who is their childen (next).
+3. It is faster because we don't need to go through the whole linked list to find which node is the end.
+    We can just reassign the tail to point to the new node.
+
+Trees
+1. Food
+    Italian
+    Indian
+    Mexican
+    lasanga
+    pizza
+    tikka masala 
+    saag 
+    burritos
+
+2. Food
+    Mexican
+    enchiladas
+    tacos
+    burritos
+    Indian
+    saag
+    tikka masala
+    Italian
+    pizza
+    Sicilian
+    New York-Style
+    Chicago-Style
+
+3. Binary Tree Search has a rule for arrangement. Each node has a left and right child.
+    They are often used for fast searching
+
+
+
