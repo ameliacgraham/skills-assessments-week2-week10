@@ -1,0 +1,18 @@
+Recursion
+1. Recursion is when a function calls itself and loops until a case is met.
+2. A base case is needed to let the function know that it is done.
+
+Graphs
+1. A system for connecting nodes. 
+2. A graph can contain loops.
+3. A graph would be useful to show Twitter connections because it can show the directions. Which users are connected and how.
+
+
+Sorting
+1. Bubble sort works by filtering one item to the top each iteration through the list.
+2. Compares first elements of two sorted lists and then adds the smaller to an empty list. 
+3. Like a binary tree search, choose a pivotal value and then sort based on that value.
+
+
+
+
